@@ -36,7 +36,10 @@
         data() {
             return {
                 platforms: [],
-                selected: ''
+                selectedPlatform: null,
+                questions: [
+                    {}
+                ]
             }
         },
         created() {
@@ -50,6 +53,9 @@
                 .catch(error => {
                     alert("error")
                 })
+        },
+        computed: {
+
         }
     }
 </script>

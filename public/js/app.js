@@ -1801,7 +1801,8 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       platforms: [],
-      selected: ''
+      selectedPlatform: null,
+      questions: [{}]
     };
   },
   created: function created() {
@@ -1815,7 +1816,8 @@ __webpack_require__.r(__webpack_exports__);
     }).catch(function (error) {
       alert("error");
     });
-  }
+  },
+  computed: {}
 });
 
 /***/ }),
