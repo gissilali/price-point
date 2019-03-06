@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Platform extends Model
 {
-    protected $fillable = ['name', 'base_cost'];
+    protected $fillable = ['name', 'base_cost'];//
 }
