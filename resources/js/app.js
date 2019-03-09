@@ -1,3 +1,4 @@
+import {store} from "./store";
 
 /**
  * First we will load all of this project's JavaScript dependencies which
@@ -29,5 +30,6 @@ Vue.component('cost-estimation-wizard', require('./components/CostEstimationWiza
  */
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+    store
 });

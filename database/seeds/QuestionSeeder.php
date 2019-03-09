@@ -57,13 +57,14 @@ class QuestionSeeder extends Seeder
     {
         $options = [];
         foreach (range(1, 3) as $item) {
-            $q = ['option' => "option  $item $platform->name $question->id", 'cost' => $this->faker->numberBetween(8000,17000)];
+            $q = ['option' => "option  $item $platform->name $question->id", 'cost' => $this->faker->numberBetween(8000,17000), 'question_id' => $question->id];
             array_push($options, $q);
         }
 
         foreach ($options as $option) {
             \App\Option::create([
                 'option' => $option['option'],
+                'question_id' => $option['question_id'],
                 'cost' => $option['cost']
             ]);
         }

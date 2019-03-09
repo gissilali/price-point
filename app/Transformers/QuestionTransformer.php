@@ -12,7 +12,7 @@ class QuestionTransformer extends TransformerAbstract
         return [
             'id' => $item->id,
             'question' => $item->question,
-//            ''
+            'options' => fractal($item->options, new OptionTransformer())
         ];
     }
 }

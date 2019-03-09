@@ -604,7 +604,7 @@ button.submit:before {
 }
 
 #middle-wizard {
-    min-height: 330px
+    /*min-height: 230px*/
 }
 
 @media (max-width: 991px) {
